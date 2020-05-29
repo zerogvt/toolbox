@@ -13,8 +13,8 @@ You need to set up locally a new ssh key and add it to your github account ([fol
 - once inside the container perform your usual git operations (`git add .; git commit -m; etc`)
 - the user and email will have been cloaked by the user and email you built the image with
 ```
-ctnr$ git config --list
+localhost$ run -it --rm -v `pwd`:`pwd` -v '/Users/zerogvt/.ssh':'/root/.ssh' -w `pwd` gitcloak bash
+root@ctnr$ git config --list
 user.name=usernameyouwant
 user.email=emailyouwant
 ```
-
