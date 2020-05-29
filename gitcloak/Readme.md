@@ -12,7 +12,7 @@ clone this repo and cd into `gitcloak` directory. Then build by:
 
 # Run
 - cd into the dir of your project
-- run docker image `docker run -it --rm -v ``pwd``:``pwd`` -v '/absolute/path/to/your/home/.ssh':'/root/.ssh' -w ``pwd`` gitcloak bash`
+- run docker image ``docker run -it --rm -v `pwd`:`pwd` -v '/absolute/path/to/your/home/.ssh':'/root/.ssh' -w `pwd` gitcloak bash``
 - once inside the container perform your usual git operations (`git add .; git commit -m; etc`)
 - the user and email will have been cloaked by the user and email you built the image with
 ```
