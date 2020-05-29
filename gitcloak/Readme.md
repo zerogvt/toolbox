@@ -1,4 +1,4 @@
-# git-cloak
+# gitcloak
 A very simple docker image that when run masks your regular local git username and password with the ones you built it with.
 
 # Preconditions
